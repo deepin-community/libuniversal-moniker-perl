@@ -1,0 +1,124 @@
+libuniversal-moniker-perl (0.08-8.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 13:27:30 +0100
+
+libuniversal-moniker-perl (0.08-8) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Axel Beckert ]
+  * Bump debhelper compatibility level to 10.
+    + Update versioned debhelper build-dependency accordingly.
+  * Mark package as autopkgtestable.
+  * Mention module name in long package description.
+  * Switch debian/watch to metacpan.org and HTTPS.
+  * Declare compliance with Debian Policy 4.1.1.
+  * Convert debian/copyright to machine-readable DEP-5 format.
+  * Set "Rules-Requires-Root: no".
+
+ -- Axel Beckert <abe@debian.org>  Mon, 30 Oct 2017 03:26:16 +0100
+
+libuniversal-moniker-perl (0.08-7) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza).
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+
+  [ Axel Beckert ]
+  * Remove Bart from Uploaders (thanks for your work!), add myself to
+    Uploaders. (Closes: #702592)
+  * Clarify short package description.
+  * Switch to source format "3.0 (quilt)"
+    + Change local modification of moniker.pm into quilt patch
+  * Switch to dh7 style rules file (fixes lintian warning
+    debian-rules-uses-deprecated-makefile)
+  * Bump Standards-Version to 3.9.3 (no further changes)
+  * Fixed the following lintian warnings:
+    + using-first-person-in-description
+    + copyright-refers-to-symlink-license
+  * Switch homepage to metacpan.org
+
+ -- Axel Beckert <abe@debian.org>  Sat, 09 Mar 2013 15:32:13 +0100
+
+libuniversal-moniker-perl (0.08-6) unstable; urgency=low
+
+  * Handing over this package to Debian Perl Group.
+  * Fixed debhelper-but-no-misc-depends.
+  * debian/watch: Updated.
+
+ -- Bart Martens <bartm-perl@knars.be>  Tue, 09 Jun 2009 08:57:58 +0200
+
+libuniversal-moniker-perl (0.08-5) unstable; urgency=low
+
+  * debian/control: Fixed description-contains-homepage.
+  * moniker.pm: Fixed manpage-has-bad-whatis-entry.
+
+ -- Bart Martens <bartm@debian.org>  Tue, 11 Dec 2007 12:51:23 +0100
+
+libuniversal-moniker-perl (0.08-4) unstable; urgency=low
+
+  * New maintainer, as agreed with Stephen.
+  * debian/*: Repackaged with cdbs.
+  * debian/watch: Updated to version 3.
+
+ -- Bart Martens <bartm@knars.be>  Thu, 16 Nov 2006 18:02:18 +0100
+
+libuniversal-moniker-perl (0.08-3) unstable; urgency=low
+
+  * debian/control - Switched to my debian.org email address
+
+ -- Stephen Quinney <sjq@debian.org>  Tue, 17 Oct 2006 17:33:57 +0100
+
+libuniversal-moniker-perl (0.08-2) unstable; urgency=low
+
+  * debian/watch - Updated URL to stop lookups randomly failing.
+
+ -- Stephen Quinney <sjq@debian.org>  Sat, 11 Jun 2005 13:48:40 +0100
+
+libuniversal-moniker-perl (0.08-1) unstable; urgency=low
+
+  * New upstream release - small fix to prevent some warnings.
+  * debian/rules - tidied slightly
+  * debian/control - Updated to Standards-Version 3.6.1.1
+
+ -- Stephen Quinney <sjq@debian.org>  Sat, 31 Jul 2004 08:52:37 +0100
+
+libuniversal-moniker-perl (0.07-1) unstable; urgency=low
+
+  * New upstream release - performance improvement.
+  * Now just recommend Lingua::EN::Inflect instead of depending.
+  * Updated copyright file.
+  * Added in the upstream Changes file.
+
+ -- Stephen Quinney <sjq@debian.org>  Wed, 25 Feb 2004 16:19:07 +0000
+
+libuniversal-moniker-perl (0.06-1) unstable; urgency=low
+
+  * New upstream release - make the tests work if the optional module
+    Lingua::EN::Inflect is not installed.
+
+ -- Stephen Quinney <sjq@debian.org>  Mon,  8 Sep 2003 15:13:06 +0100
+
+libuniversal-moniker-perl (0.05-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stephen Quinney <sjq@debian.org>  Fri,  5 Sep 2003 14:52:05 +0100
+
+libuniversal-moniker-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Stephen Quinney <sjq@debian.org>  Mon,  1 Sep 2003 13:44:52 +0100
+

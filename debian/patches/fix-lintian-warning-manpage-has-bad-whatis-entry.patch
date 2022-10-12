@@ -1,0 +1,16 @@
+Description: Fix lintian warning manpage-has-bad-whatis-entry
+ Add a description to the package name in the POD section NAME.
+Author: Bart Martens <bartm@debian.org>
+Last-Update: 2007-12-11
+
+--- libuniversal-moniker-perl-0.08.orig/moniker.pm
++++ libuniversal-moniker-perl-0.08/moniker.pm
+@@ -3,7 +3,7 @@ $UNIVERSAL::moniker::VERSION = '0.08';
+ 
+ =head1 NAME
+ 
+-UNIVERSAL::moniker
++UNIVERSAL::moniker - Nicer names for your Perl modules/classes
+ 
+ =head1 SYNOPSIS
+ 

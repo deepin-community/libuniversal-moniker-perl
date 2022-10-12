@@ -1,0 +1,29 @@
+Source: libuniversal-moniker-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Axel Beckert <abe@debian.org>
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: perl (>= 5.8.0), liblingua-en-inflect-perl (>= 1.88)
+Standards-Version: 4.1.1
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libuniversal-moniker-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libuniversal-moniker-perl.git
+Homepage: https://metacpan.org/release/UNIVERSAL-moniker
+Testsuite: autopkgtest-pkg-perl
+Rules-Requires-Root: no
+
+Package: libuniversal-moniker-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}
+Recommends: liblingua-en-inflect-perl (>= 1.88)
+Description: Methods to output nicer names for your Perl modules/classes
+ Class names in Perl often don't sound great when spoken, or look good
+ when written in prose. For this reason, the module authors tend to
+ say things like "customer" or "basket" when they are referring to
+ "My::Site::User::Customer" or "My::Site::Shop::Basket". They thought
+ it would be nice if their classes knew what they would prefer to call
+ them.
+ .
+ The UNIVERSAL::moniker module will add a "moniker" (and
+ "plural_moniker") method to "UNIVERSAL", and so to every class or
+ module.
